@@ -7,18 +7,21 @@
     "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tl-vivian/liveroom-demo.git"
+    "url": "git+https://github.com/vivianycc/interactive-liveroom.git"
   },
   "author": "Vivian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tl-vivian/liveroom-demo/issues"
+    "url": "https://github.com/vivianycc/interactive-liveroom/issues"
   },
-  "homepage": "https://github.com/tl-vivian/liveroom-demo#readme",
+  "homepage": "https://vivianycc.github.io/interactive-liveroom",
   "keywords": [],
   "devDependencies": {
     "@babel/core": "^7.10.3",
@@ -26,6 +29,7 @@
     "@babel/preset-react": "^7.10.1",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5"
   },
