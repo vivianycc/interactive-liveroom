@@ -10,7 +10,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "build": "parcel build src/index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
